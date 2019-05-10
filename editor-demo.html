@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<title>Editor</title>
+<meta charset="utf-8" />
+
+<link rel=stylesheet href="editor.css">
+<script src="jquery-3.4.1.min.js"></script>
+<script src="editor.js"></script>
+<style>
+  #editor {
+    height: 500px;
+    width: 100%;
+    background-color: #ececec;
+  }
+
+  .other {
+    height: 100px;
+    width: 100%;
+    background-color: gray;
+  }
+</style>
+
+<body>
+  <div class="other"></div>
+  <div id="editor"></div>
+
+  <script>
+    var editor = Editor.init($('#editor'));
+    
+  </script>
+</body>
+
+</html>

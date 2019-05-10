@@ -1,0 +1,74 @@
+.gm-editor {
+  position: relative;
+  font-family: monospace;
+  cursor: text;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+}
+
+.gm-editor-cursor {
+  position: absolute;
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  line-height: 1.4em;
+  background-color: rgb(255, 60, 60);
+  animation: text-cursor 0.8s infinite;
+}
+
+.gm-editor-row {
+  margin: 0;
+  padding: 0;
+  display: block;
+  line-height: 1.3em;
+}
+
+.gm-editor-tmp-textarea {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+@keyframes text-cursor {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+/* Firefox */
+@-moz-keyframes text-cursor {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+/* Safari 和 Chrome */
+@-webkit-keyframes text-cursor {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+/* Opera */
+@-o-keyframes text-cursor {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
